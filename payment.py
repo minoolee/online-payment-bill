@@ -24,7 +24,7 @@ def take_order():
     order_items = []
     while True:
       item = input("Give your order please: ")
-      if item == "":
+      if item not in caffe_menu:
         print("We're sorry! Your product isn't available.")
       else:
           order_items.append(item)
